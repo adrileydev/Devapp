@@ -1,8 +1,12 @@
-var ver = (function () {
-    function ver() {
+var Pessoa = (function () {
+    function Pessoa(Nome) {
+        this.Nome = Nome;
     }
-    return ver;
+    Pessoa.prototype.mostraIdade = function () {
+        console.log(this.Nome + " Sua Idade Please  !");
+    };
+    return Pessoa;
 }());
-var v = new ver();
-v.nome = "ADRILEY FRANCISCO ALMEIDA PEREIRA";
-console.log(v.nome);
+var pessoa = new Pessoa("Adriey Francisco Almeida Pereira  ");
+console.log(pessoa.Nome);
+pessoa.mostraIdade();

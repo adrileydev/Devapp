@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component'
 import { ROUTES } from "app/app.routes";
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { PedidoComponent } from './pedido/pedido.component';
+import { ItemComponent } from './restaurante/item/item.component';
+ 
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { PedidoComponent } from './pedido/pedido.component';
     HomeComponent,
     AboutComponent,
     RestauranteComponent,
-    PedidoComponent 
+    PedidoComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ItemComponent } from "app/restaurante/restaurants/item.component";
-import { ItemRestaurant } from "app/restaurante/restaurants/item.model";
 
 
 
@@ -9,6 +7,8 @@ import { ItemRestaurant } from "app/restaurante/restaurants/item.model";
   templateUrl: './restaurante.component.html'
 })
 export class RestauranteComponent implements OnInit {
+  
+  /*
   restaurantes: ItemRestaurant[] =
   [
     {
@@ -32,7 +32,7 @@ export class RestauranteComponent implements OnInit {
   ]
 
   @Input() itemRestaurante: ItemComponent
-
+*/
   constructor() { }
 
   ngOnInit() {

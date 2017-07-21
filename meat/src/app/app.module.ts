@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component'
 import { ROUTES } from "app/app.routes";
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { PedidoComponent } from './pedido/pedido.component';
+import { RestaurantComponent } from "./restaurante/restaurant/restaurant.component";
+
 
  
 
@@ -23,7 +25,9 @@ import { PedidoComponent } from './pedido/pedido.component';
     HomeComponent,
     AboutComponent,
     RestauranteComponent,
-    PedidoComponent 
+    PedidoComponent,
+    RestaurantComponent
+     
     
   ],
   imports: [

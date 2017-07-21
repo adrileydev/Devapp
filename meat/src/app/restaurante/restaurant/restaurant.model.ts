@@ -1,4 +1,4 @@
-export interface ItemRestaurant{
+export interface Restaurant{
    id               : number;
    name             : string;
    category         : string;
@@ -6,3 +6,5 @@ export interface ItemRestaurant{
    rating           : number;
    imagePath        : string;   
 }
+
+ 

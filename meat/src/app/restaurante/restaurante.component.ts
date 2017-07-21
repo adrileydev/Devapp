@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Restaurant } from "./restaurant/restaurant.model";
+
 
 
 
@@ -8,8 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RestauranteComponent implements OnInit {
   
-  /*
-  restaurantes: ItemRestaurant[] =
+  restaurants : Restaurant[]= 
   [
     {
       id: 1,
@@ -27,13 +28,32 @@ export class RestauranteComponent implements OnInit {
       rating: 3.5,
       imagePath: "assets/img/restaurants/burgerhouse.png",
 
+    },
+    {
+      id: 2,
+      name: "  House",
+      category: "Pizza",
+      deliveryEstimate: "100m",
+      rating: 3.5,
+      imagePath: "assets/img/restaurants/burgerhouse.png",
+
+    },
+
+    {
+      id: 2,
+      name: "Burger",
+      category: "Hamburgers",
+      deliveryEstimate: "100m",
+      rating: 3.5,
+      imagePath: "assets/img/restaurants/burgerhouse.png",
+
     }
 
   ]
 
-  @Input() itemRestaurante: ItemComponent
-*/
   constructor() { }
+
+  
 
   ngOnInit() {
   }

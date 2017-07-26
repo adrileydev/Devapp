@@ -1,22 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { NgModule }      from '@angular/core';
+import { HttpModule }    from '@angular/http';
+import { RouterModule }  from '@angular/router';
 
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent }   from './app.component';
+import { HeaderComponent }from './header/header.component';
+import { HomeComponent }  from './home/home.component';
 import { AboutComponent } from './about/about.component'
  
-import { ROUTES } from "app/app.routes";
+import { ROUTES }               from "app/app.routes";
 import { RestauranteComponent } from './restaurante/restaurante.component';
-import { PedidoComponent } from './pedido/pedido.component';
-import { RestaurantComponent } from "./restaurante/restaurant/restaurant.component";
-
-
- 
-
+import { PedidoComponent }      from './pedido/pedido.component';
+import { RestaurantComponent }  from "./restaurante/restaurant/restaurant.component";
+import { RestauranteService }   from "app/restaurante/restaurant/restaurant.service";
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
+import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -26,16 +27,18 @@ import { RestaurantComponent } from "./restaurante/restaurant/restaurant.compone
     AboutComponent,
     RestauranteComponent,
     PedidoComponent,
-    RestaurantComponent
-     
-    
+    RestaurantComponent,
+    RestaurantDetailComponent,
+    MenuComponent,
+    MenuItemComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestauranteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

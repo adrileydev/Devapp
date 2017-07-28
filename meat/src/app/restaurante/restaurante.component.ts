@@ -7,11 +7,14 @@ import { RestauranteService } from "app/restaurante/restaurant/restaurant.servic
   templateUrl: './restaurante.component.html'
 })
 export class RestauranteComponent implements OnInit {
-  restaurants: Restaurant[]
+  restaurant: Restaurant[]
+    
+ 
   constructor(private restauranteService: RestauranteService) { }  
-
+  
   ngOnInit() {
-    this.restauranteService.restaurants().subscribe(restaurants => this.restaurants = restaurants);     
+   this.restauranteService.All().subscribe(restaurants => this.restaurant = restaurants);     
+  
   }
 
 }

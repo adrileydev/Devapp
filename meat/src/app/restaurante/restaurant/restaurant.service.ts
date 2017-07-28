@@ -12,10 +12,15 @@ export class RestauranteService{
 
     constructor(private http : Http){}
  
-    restaurants(): Observable<Restaurant[]>{
+    All(): Observable<Restaurant[]>{
      return this.http.get(`${MET_API}/restaurants`)
       .map(response=> response.json())
       .catch(ErroHandler.handleError) 
     }  
-     
+
+     GetId(id:string):Observable<Restaurant[]>{
+        return this.http.get(`${MET_API}/restaurants/${id}`)
+         .map(response => response.json())
+         .catch(ErroHandler.handleError) 
+     }
 }

@@ -14,6 +14,7 @@ export class RestauranteComponent implements OnInit {
   
   ngOnInit() {
    this.restauranteService.All().subscribe(restaurants => this.restaurant = restaurants);     
+   /// this.restauranteService.All().subscribe(restaurants => this.restaurant = restaurants);     
   
   }
 

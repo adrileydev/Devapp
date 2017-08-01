@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { NgModule }      from '@angular/core';
+import { HttpModule }    from '@angular/http';
+import { RouterModule }  from '@angular/router';
 
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent }   from './app.component';
+import { HeaderComponent }from './header/header.component';
+import { HomeComponent }  from './home/home.component';
 import { AboutComponent } from './about/about.component'
  
-import { ROUTES } from "app/app.routes";
+import { ROUTES }               from "app/app.routes";
 import { RestauranteComponent } from './restaurante/restaurante.component';
-import { PedidoComponent } from './pedido/pedido.component';
-
- 
-
+import { PedidoComponent }      from './pedido/pedido.component';
+import { RestaurantComponent }  from "./restaurante/restaurant/restaurant.component";
+import { RestauranteService }   from "app/restaurante/restaurant/restaurant.service";
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
+import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
+import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
+import { TesteComponent } from './teste/teste.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +28,21 @@ import { PedidoComponent } from './pedido/pedido.component';
     HomeComponent,
     AboutComponent,
     RestauranteComponent,
-    PedidoComponent 
-    
+    PedidoComponent,
+    RestaurantComponent,
+    RestaurantDetailComponent,
+    MenuComponent,
+    MenuItemComponent,
+    ShoppingCartComponent,
+    ReviewsComponent,
+    TesteComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestauranteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,9 @@
-<h1 class="jumbotron">
-    {{title}}
-</h1>
-<vhs-video-list [videos]="videos"></vhs-video-list>
+<h1>{{PageTitulo}}</h1>
+<vhs-video-list    [InputVideos]="ArrayVideo"></vhs-video-list>
+<!-- <h1>{{Np}}</h1>
+<vhs-lista-pessoas [InputPessoas]="ArrayPessoa" ></vhs-lista-pessoas> -->
 
-<h1>
-    {{Np}}
-</h1>
-<vhs-lista-pessoas [Pessoas]="Pessoas"></vhs-lista-pessoas> 
+
+<vhs-detalhe *ngIf="selectedVideo"[InputVideos]="selectedVideo">
+    
+</vhs-detalhe>

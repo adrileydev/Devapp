@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { VideoListComponent } from './video-list/video-list.component';
  
 import { ListaPessoasComponent } from './lista-pessoas/lista-pessoas.component';
+import { DetalheComponent } from './detalhe/detalhe.component';
  
 @NgModule({
   declarations: [
     AppComponent, 
     VideoListComponent, 
-    ListaPessoasComponent
+    ListaPessoasComponent, DetalheComponent
  
   ],
   imports: [

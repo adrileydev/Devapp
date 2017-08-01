@@ -1,13 +1,13 @@
 export class Pessoa{
    Nome:string;
-   idade : number;
-   telefone : string;
+   Idade : number;
+   Telefone : string;
 
    constructor(N: string,id : number,f : string)
    {
-       this.idade = id;
+       this.Idade = id;
        this.Nome = N;
-       this.telefone = f;
+       this.Telefone = f;
    }
      public valida(f : string): boolean{
         if(f == ""){

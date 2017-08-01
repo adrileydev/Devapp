@@ -1,16 +1,14 @@
- <table class="table">
-   
+ <table class="table table-striped">   
         <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Telefone</th>
-        </tr>
- 
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>TELEFONE</th>
+        </tr> 
     <tbody> 
-        <tr *ngFor="let P of Pessoas" (click)= "Mostrar(P)">
-            <td>{{P.Nome | uppercase}} </td>
-            <td> {{P.idade}}</td>
-            <td> {{P.telefone}}</td>
+        <tr *ngFor="let P of InputPessoas" >
+             <td>{{ P.Nome | uppercase }}</td>
+            <td> {{P.Idade}}</td>
+            <td> {{P.Telefone}}</td>  
         </tr>
     </tbody>
 </table>

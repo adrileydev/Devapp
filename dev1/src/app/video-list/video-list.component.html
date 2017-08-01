@@ -2,15 +2,13 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Title</th>
+            <th>TITULO</th>
         </tr>
-    </thead> 
- 
+    </thead>  
     <tbody> 
-        <tr *ngFor="let v of videos" (click)="onSelect(v)">
- 
+        <tr *ngFor="let v of InputVideos"(click)="onSelect(v)"> 
             <td> {{v.id}}</td>
-            <td> {{v.title}}</td>
+            <td> {{v.title | uppercase}}</td>
         </tr>
     </tbody>
 </table>

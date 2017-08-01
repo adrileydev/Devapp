@@ -9,8 +9,4 @@ export class Video {
         this.url = url;
         this.desc = desc;
     }
- 
-
-
- 
 }

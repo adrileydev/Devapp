@@ -5,11 +5,8 @@ import { Pessoa } from "app/Pessoa";
   templateUrl: './lista-pessoas.component.html' 
 })
 export class ListaPessoasComponent implements OnInit {
- @Input() Pessoas;
-
-   Mostrar(P: Pessoa) {
-    console.log(JSON.stringify(P));
-  }
+   @Input() InputPessoas;  
+ 
   constructor() { }
   ngOnInit() {
   }

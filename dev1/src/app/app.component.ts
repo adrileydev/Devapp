@@ -11,14 +11,14 @@ import { VideoListComponent } from "app/video-list/video-list.component";
 }) 
 export class AppComponent {
   PageTitulo = Config.TITLE_PAGE; 
-  ArrayVideo: Array<Video>;   
+  videos :Array<Video>;   
   ArrayPessoa:Array<Pessoa>;
   selectedVideo :Video;
         Np = " Nome das Pessoa "; 
   Detelhes = " Detalhes dos Videos";
 
   constructor(){
-    this.ArrayVideo=[
+    this.videos=[
         new Video(1, "Test 1", "21222", "Test Description"), 
         new Video(2, "Test 2", "asjdkajdajskd"), 
         new Video(3, "Test 3", "212312312"),
@@ -31,7 +31,5 @@ export class AppComponent {
         new Pessoa("Victor Hugo Siqueira Pereira",12,"555557")
       ]
   } 
-    onSelectVideo(InputVideos){
-      this.selectedVideo = InputVideos;
-    }
+    
 }

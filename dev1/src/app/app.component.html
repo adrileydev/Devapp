@@ -1,9 +1,9 @@
 <h1>{{PageTitulo}}</h1>
-<vhs-video-list    [InputVideos]="ArrayVideo"></vhs-video-list>
+<vhs-video-list    [videos]="videos"(selectVideo)="onSelectVideo($event)"></vhs-video-list>
 <!-- <h1>{{Np}}</h1>
 <vhs-lista-pessoas [InputPessoas]="ArrayPessoa" ></vhs-lista-pessoas> -->
 
 
-<vhs-detalhe *ngIf="selectedVideo"[InputVideos]="selectedVideo">
+<!-- <vhs-detalhe *ngIf="selectedVideo"[InputVideos]="selectedVideo"> 
     
-</vhs-detalhe>
+</vhs-detalhe>-->

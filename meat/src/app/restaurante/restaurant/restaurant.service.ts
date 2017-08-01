@@ -8,6 +8,7 @@ import "rxjs/add/operator/catch";
 import { ErroHandler } from "app/app.erro";
 
 @Injectable()
+<<<<<<< HEAD
 export class RestauranteService {
     constructor(private http: Http) { }
     All(): Observable<Restaurant[]> {
@@ -25,4 +26,21 @@ export class RestauranteService {
             .map(response => response.json())
             .catch(ErroHandler.handleError)
     }
+=======
+export class RestauranteService{
+
+    constructor(private http : Http){}
+ 
+    All(): Observable<Restaurant[]>{
+     return this.http.get(`${MET_API}/restaurants`)
+      .map(response=> response.json())
+      .catch(ErroHandler.handleError) 
+    }  
+
+     GetId(id:string):Observable<Restaurant[]>{
+        return this.http.get(`${MET_API}/restaurants/${id}`)
+         .map(response => response.json())
+         .catch(ErroHandler.handleError) 
+     }
+>>>>>>> master
 }

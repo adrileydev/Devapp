@@ -1,0 +1,18 @@
+
+
+ <table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let P of Pessoas">
+            <td>{{P.Nome}} </td>
+            <td> {{P.idade}}</td>
+            <td> {{P.telefone}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -19,7 +19,11 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
+<<<<<<< HEAD
  
+=======
+import { TesteComponent } from './teste/teste.component';
+>>>>>>> master
 
 @NgModule({
   declarations: [
@@ -34,8 +38,13 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
     MenuComponent,
     MenuItemComponent,
     ShoppingCartComponent,
+<<<<<<< HEAD
     ReviewsComponent
 
+=======
+    ReviewsComponent,
+    TesteComponent
+>>>>>>> master
   ],
   imports: [
     BrowserModule,

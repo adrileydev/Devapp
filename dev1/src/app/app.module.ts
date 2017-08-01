@@ -5,11 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { VideoListComponent } from './video-list/video-list.component';
+<<<<<<< HEAD
+=======
+import { ListaPessoasComponent } from './lista-pessoas/lista-pessoas.component';
+>>>>>>> master
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     VideoListComponent
+=======
+    VideoListComponent,
+    ListaPessoasComponent
+>>>>>>> master
   ],
   imports: [
     BrowserModule,

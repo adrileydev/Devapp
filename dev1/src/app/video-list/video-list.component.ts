@@ -1,32 +1,18 @@
 import { Video } from './../video';
 import { Component, OnInit, Input } from '@angular/core';
- 
- 
+
+
 @Component({
   selector: 'vhs-video-list',
-  templateUrl: './video-list.component.html', 
-<<<<<<< HEAD
-  //inputs: ['videos']
-=======
-
->>>>>>> master
+  templateUrl: './video-list.component.html'
 })
 export class VideoListComponent implements OnInit {
- @Input() videos;
+  @Input() videos;
   constructor() { }
 
-<<<<<<< HEAD
-   onSelect(vid: Video) {   
-      console.log(JSON.stringify(vid));
-=======
-   p(vid: Video) {   
-      console.log();
-      alert(JSON.stringify(vid));
->>>>>>> master
-   }
-
-  ngOnInit() {
-  
+  onSelect(vid: Video) {
+    console.log(JSON.stringify(vid));
   }
-
+  ngOnInit() {
+  }
 }

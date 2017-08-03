@@ -1,9 +1,19 @@
-<h1>{{PageTitulo}}</h1>
-<vhs-video-list    [videos]="videos"(selectVideo)="onSelectVideo($event)"></vhs-video-list>
-<!-- <h1>{{Np}}</h1>
-<vhs-lista-pessoas [InputPessoas]="ArrayPessoa" ></vhs-lista-pessoas> -->
-
-
-<!-- <vhs-detalhe *ngIf="selectedVideo"[InputVideos]="selectedVideo"> 
-    
-</vhs-detalhe>-->
+<div class="wrapper">
+  <vhs-header></vhs-header>
+  <div class="content-wrapper">
+    <div class="container">
+      <h1>Pessoas </h1>
+        
+      <vhs-pessoa *ngFor="let student of students" [student]="student"></vhs-pessoa>
+   
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> Estudante.
+      </div>
+      <strong>VHS DESENVOLVIMENTO LTDA  </strong>
+    </div>
+  </footer>
+</div>

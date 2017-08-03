@@ -1,21 +1,22 @@
 export class Pessoa{
-   Nome:string;
-   Idade : number;
-   Telefone : string;
+   Nome      : string;
+   Idade     : number;
+   Telefone? : string;
+   Ativo     : boolean;
 
-   constructor(N: string,id : number,f : string)
+   constructor(N: string,id : number,f : string,a?: boolean)
    {
-       this.Idade = id;
-       this.Nome = N;
+       this.Idade    = id;
+       this.Nome     = N;
        this.Telefone = f;
+       this.Ativo    = a;
+        
    }
-     public valida(f : string): boolean{
-        if(f == ""){
-            return false;
-        }else{
+     public ValidaId(value : number): boolean{
+        if(value >= 18){
             return true;
+        }else{
+            return false;
         }
-
      }
-
 }

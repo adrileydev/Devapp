@@ -1,14 +1,9 @@
- <table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>TITULO</th>
-        </tr>
-    </thead>  
-    <tbody> 
-        <tr *ngFor="let v of videos" (click)= "Selecionado(v)"> 
-            <td> {{v.id}}</td>
-            <td> {{v.title | uppercase}}</td>
-        </tr>
-    </tbody>
-</table>
+<br>
+<div [hidden]="!pessoas.Ativo">
+<label>Nome</label>
+{{pessoas.Nome}} 
+<label>Idade</label>
+{{pessoas.Idade}}</div>
+
+<!-- 
+{Nome : 'adriley1',Idade : 41,Ativo: true} -->

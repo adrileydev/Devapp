@@ -1,0 +1,25 @@
+
+  <h1>Cursos Works!</h1>
+<ul *ngFor = "let t of cursos">
+  <li (click)= "clicar(t)">
+       {{t}}
+  </li>
+</ul>
+<article>
+  <h3>
+     Classes de estilos 
+  </h3>
+    <div>
+      <button type="button" class="btn btn-success">Warning</button>
+
+       Seleecione Uma classe
+       <select #class (change)="0">
+        <option value="alert-Default">Success</option>
+         <option value="alert-info" >info</option>
+         <option value="alert-Warning">Warning</option>
+         <option value="alert-Danger">Danger</option>
+       </select>
+    </div>
+</article>
+  
+

@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CursosService {
-
- 
   constructor() { }
-  getCursos(){
-     return ["adriley","Patricia","ana luiza","HUGO"];
-}
+  getCursos() {
+    return ["Adriley", "Patricia", "Ana Luiza", "Victor Hugo"];
+  }
+  getTitulo() {
+    return ["DESENVOLVIMENTO", "TESTE", "VALIDAÇÃO", "GERENCIA"];
+  }
 }

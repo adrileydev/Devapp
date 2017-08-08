@@ -2,16 +2,13 @@
   <vhs-header></vhs-header>
   <div class="content-wrapper">
     <div class="container">
-      <h1>Pessoas </h1>
-        
-      <vhs-pessoa *ngFor="let student of students" [student]="student"></vhs-pessoa>
-   
-    </div>
-  </div>
+      <h1>Pessoas </h1>        
+      <!-- <vhs-pessoa *ngFor="let pessoas of pessoas" [pessoas]="pessoas" (selectVideo)="onSelectVideo($event)"></vhs-pessoa>   
+     -->
   <footer class="main-footer">
     <div class="container">
       <div class="pull-right hidden-xs">
-        <b>Version</b> Estudante.
+        <strong>Versão  </strong><b>{{Versao}}</b>
       </div>
       <strong>VHS DESENVOLVIMENTO LTDA  </strong>
     </div>

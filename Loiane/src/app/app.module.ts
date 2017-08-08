@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+ 
 
 import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursosService } from "./curso/cursos.service";
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+ 
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     CursosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule 
+  
   ],
   providers: [CursosService],
   bootstrap: [AppComponent]

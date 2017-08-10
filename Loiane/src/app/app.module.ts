@@ -11,6 +11,9 @@ import { NgclassComponent } from './ngclass/ngclass.component';
 import { CustomComponent } from './custom/custom.component';
 import { DiretivasDirective } from "./shared/diretivas.directive";
 import { MouseDirective } from './shared/mouse.directive';
+import { CriarcursoComponent } from './criarcurso/criarcurso.component';
+import { LogService } from "./criarcurso/shared/log.service";
+
 
 
 @NgModule({
@@ -21,13 +24,16 @@ import { MouseDirective } from './shared/mouse.directive';
     NgclassComponent,
     DiretivasDirective,
     CustomComponent,
-    MouseDirective
+    MouseDirective,
+    CriarcursoComponent
+    
+    
   ],
   imports: [
     BrowserModule 
   
   ],
-  providers: [CursosService],
+  providers: [CursosService,LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

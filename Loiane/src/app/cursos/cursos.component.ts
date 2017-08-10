@@ -18,11 +18,9 @@ export class CursosComponent implements OnInit {
    constructor(private cursosService : CursosService) {
     this.nomePortal  = "Teste de Desenvolvimento com Angular...";
     this.valor = 67;
-    this.cursos = this.cursosService.getCursos();
-    this.titulos = this.cursosService.getTitulo();
-
-   
-
+ 
+    
+    
    }
 
  

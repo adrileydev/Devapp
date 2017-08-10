@@ -1,0 +1,20 @@
+ 
+ <h1>:: . Adicionar Cursos . ::</h1>
+ <input type="text" width="1000"  #saida >
+ <button class="btn btn primary"(click)= "OnSalva(saida.value)" >Adicionar</button>
+ <button class="btn btn-warning"(click)= "OnSalva(saida.value)" >Excluir</button>
+   
+<div *ngFor="let t of cursos ">
+      <p Mouse>{{t| uppercase}}</p>   
+         
+ </div>
+    <br>
+       <h1>TITULOS</h1>   
+
+
+       <div *ngFor="let r of titulos ">
+      <p Mouse>{{r| uppercase}}</p>   
+         
+ </div>
+    <br>
+       <h1>TOTAL</h1>   

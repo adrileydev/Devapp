@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
- 
+import { NgModule, LOCALE_ID } from '@angular/core';
+
 
 import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
-import { CursosService } from "./curso/cursos.service";
+import { CursosService } from "./servicos/cursos.service";
 import { HeaderComponent } from './header/header.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
- 
+
 import { CustomComponent } from './custom/custom.component';
 import { DiretivasDirective } from "./shared/diretivas.directive";
 import { MouseDirective } from './shared/mouse.directive';
-import { CriarcursoComponent } from './criarcurso/criarcurso.component';
-import { LogService } from "./criarcurso/shared/log.service";
+
+
+import { CadcursoComponent } from './cadcurso/cadcurso.component';
+
+import { UtilPipe } from './pipes/util.pipe';
+import { ConfiguracaoService } from "./config/configuracao.service";
 
 
 
@@ -25,15 +29,21 @@ import { LogService } from "./criarcurso/shared/log.service";
     DiretivasDirective,
     CustomComponent,
     MouseDirective,
-    CriarcursoComponent
-    
-    
+    CadcursoComponent,
+    UtilPipe
+
+
   ],
   imports: [
-    BrowserModule 
-  
+    BrowserModule
+
   ],
-  providers: [CursosService,LogService],
+  providers: [CursosService,
+
+
+            ],
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

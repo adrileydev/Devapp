@@ -8,17 +8,17 @@ export class MouseDirective {
     //this.renderer.setElementStyle(this.elementRef.nativeElement,'background-color','yellow');
     //this.renderer.setElementStyle(this.elementRef.nativeElement,'font-size','x-large');
     this.backgroundColor = 'yellow';
-           //this.fontsize = 'x-large';
+
   }
    @HostBinding('style.background-color') backgroundColor:string;
    @HostBinding('style.font-size')fontsize:string;
-   
+
    @HostListener('mouseleave') saimouse(){
    // this.renderer.setElementStyle(this.elementRef.nativeElement,'background-color','white');
    // this.renderer.setElementStyle(this.elementRef.nativeElement,'font-size','medium');
- 
+
    this.backgroundColor = 'white';
-         // this.fontsize = 'medium';
+
   }
   constructor() {}
 }

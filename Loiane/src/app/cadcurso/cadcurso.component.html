@@ -1,0 +1,40 @@
+<div class="form-group row">
+  <div class="col-xs-2">
+    <label for="ex1">DESCRIÇÃO</label>
+    <input class="form-control" id="ex1" type="text" placeholder="Descrição " #v>
+  </div>
+  <div class="col-xs-3">
+    <label for="ex2">VALOR</label>
+    <input class="form-control" id="ex2" type="text" placeholder="Valor">
+  </div>
+  <div class="col-xs-2">
+    <label for="ex3">CODIGO P </label>
+    <input class="form-control" id="ex3" type="text" placeholder="Codigo P" alt="Codigo Promocional">
+  </div>
+</div>
+<button type="button" class="btn btn primary">Gravar</button>
+
+<h1>Lista de Cursos</h1>
+<table class="table ">
+  <thead>
+    <tr>
+      <th>DESCRIÇÃO </th>
+      <th>VALOR</th>
+      <th>CUPOM</th>
+      <th>DATA DE VENDA </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of cursos">
+      <td Mouse> {{item.Nome | util}}</td>
+      <td Mouse> {{item.Valor | currency:'BRL':true}}</td>
+      <td Mouse> {{item.Cupom}} </td>
+      <td Mouse> {{item.DtCadastro | date: 'dd/MM/yyyy'}} </td>
+
+    </tr>
+  </tbody>
+</table>
+
+{{ValorAsync | async}}
+<br>
+{{ValorObservable|async}}
